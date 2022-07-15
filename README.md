@@ -99,3 +99,9 @@ abline(B0, B1, col = "red")
 ```
 
 abline a, b: It specifies the intercept and the slope of the line
+
+```
+lmodPutt = glm(Made ~ Length, data = Putts1, family = binomial)
+summary(lmodPutt)
+anova(lmodPutt, test = "Chisq")
+```
